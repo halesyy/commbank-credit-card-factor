@@ -1,7 +1,7 @@
 {
   "name": "CommBank Smart Access After-credit",
   "version": "1.0.0",
-  "manifest_version": 2,
+  "manifest_version": 3,
   "description": "Edit your Smart Access to reflect your after-credit spend.",
   "browser_action": {
 		"default_icon": "icon.png",
