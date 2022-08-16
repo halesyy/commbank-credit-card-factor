@@ -5,8 +5,7 @@
   "description": "Edit your Smart Access to reflect your after-credit spend.",
   "browser_action": {
 		"default_icon": "icon.png",
-		"default_title": "NeverDebt",
-		"default_popup": "extension.html"
+		"default_title": "NeverDebt"
 	},
   "permissions": [
     "storage"
