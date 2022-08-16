@@ -1,0 +1,28 @@
+{
+  "name": "CommBank Smart Access After-credit",
+  "version": "1.0.0",
+  "manifest_version": 2,
+  "description": "Edit your Smart Access to reflect your after-credit spend.",
+  "browser_action": {
+		"default_icon": "icon.png",
+		"default_title": "NeverDebt",
+		"default_popup": "extension.html"
+	},
+  "permissions": [
+    "storage"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.commbank.com.au/retail/netbank/home/",
+        "https://www2.my.commbank.com.au/netbank/TransactionHistory/History.aspx*"
+      ],
+      "js": ["saver.js"],
+      "run_at": "document_end"
+    }
+  ],
+  "content_security_policy": "",
+  "icons": {
+    "128": "icon.png"
+  }
+}
